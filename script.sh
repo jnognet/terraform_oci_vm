@@ -1,5 +1,6 @@
 #/bin/env bash
 sudo apt update -y && sudo apt upgrade -y
+
 sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
 wget -O- https://apt.releases.hashicorp.com/gpg | \
     gpg --dearmor | \
@@ -14,3 +15,8 @@ sudo apt update
 sudo apt-get install terraform
 terraform -install-autocomplete
 terraform -help
+
+curl -o install.sh https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh
+chmod +x install.sh
+./install.sh --accept-all-defaults
+rm -f install.sh
