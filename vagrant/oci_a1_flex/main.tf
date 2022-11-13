@@ -13,7 +13,6 @@ provider "oci" {
   config_file_profile = "terraform"                 
 }                                                         
 
-
 resource "oci_core_instance" "generated_oci_core_instance" {
 	agent_config {
 		is_management_disabled = "false"
@@ -51,7 +50,7 @@ resource "oci_core_instance" "generated_oci_core_instance" {
 		recovery_action = "RESTORE_INSTANCE"
 	}
 	availability_domain = "zsXH:SA-SAOPAULO-1-AD-1"
-	compartment_id = "ocid1.tenancy.oc1..aaaaaaaaefhifylwch3so2ibunolr3kg5ez6axfozw43r4jrusajcckm5myq"
+	compartment_id = "ocid1.compartment.oc1..aaaaaaaa3fhyvxw4mbvasst2skoiuhv4esihat3lafqb3ubdisl2567mdvoa"
 	create_vnic_details {
 		assign_private_dns_record = "true"
 		assign_public_ip = "true"
