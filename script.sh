@@ -1,4 +1,4 @@
-#/bin/env bash
+#!/bin/env bash
 find  /home/vagrant/scripts/ -type f -name "*.sh"  | xargs chmod +x
 
 sudo apt update -y && sudo apt upgrade -y
@@ -17,8 +17,6 @@ sudo apt update
 sudo apt-get install terraform
 terraform -install-autocomplete
 terraform --version
-
-sudo apt autoremove
 
 sudo -u vagrant curl -o /home/vagrant/install.sh https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh
 sudo -u vagrant chmod +x /home/vagrant/install.sh 
