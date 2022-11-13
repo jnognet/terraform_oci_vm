@@ -1,2 +1,4 @@
 .vagrant/
 /vagrant/oci
+**/.terraform*
+**/terraform.tfstate*
