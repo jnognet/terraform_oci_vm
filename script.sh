@@ -1,4 +1,6 @@
 #/bin/env bash
+find  /home/vagrant/scripts/ -type f -name "*.sh"  | xargs chmod +x
+
 sudo apt update -y && sudo apt upgrade -y
 
 sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
@@ -14,9 +16,12 @@ echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] \
 sudo apt update
 sudo apt-get install terraform
 terraform -install-autocomplete
-terraform -help
+terraform --version
 
-curl -o install.sh https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh
-chmod +x install.sh
-./install.sh --accept-all-defaults
-rm -f install.sh
+sudo apt autoremove
+
+sudo -u vagrant curl -o /home/vagrant/install.sh https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh
+sudo -u vagrant chmod +x /home/vagrant/install.sh 
+sudo -u vagrant /home/vagrant/install.sh --accept-all-defaults 
+sudo -u vagrant rm -f /home/vagrant/install.sh 
+sudo -u vagrant /home/vagrant/bin/oci --version
