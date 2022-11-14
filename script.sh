@@ -1,4 +1,5 @@
-#!/bin/env bash
+#!/bin/bash
+
 find  /home/vagrant/scripts/ -type f -name "*.sh"  | xargs chmod +x
 
 sudo apt update -y && sudo apt upgrade -y

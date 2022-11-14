@@ -1,4 +1,5 @@
-#!/bin/env bash
+#!/bin/bash
+
 set -o xtrace
 
 cd /home/vagrant
