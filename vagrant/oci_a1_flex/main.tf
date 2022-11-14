@@ -54,7 +54,7 @@ resource "oci_core_instance" "generated_oci_core_instance" {
 	create_vnic_details {
 		assign_private_dns_record = "true"
 		assign_public_ip = "true"
-		subnet_id = "ocid1.subnet.oc1.sa-saopaulo-1.aaaaaaaatnljsfzdjgc4sqdys33tzmwl2ap4pr6fnsavl7rapuaqpodtfika"
+		subnet_id = "ocid1.subnet.oc1.sa-saopaulo-1.aaaaaaaa24426h4p53v3gb4fr6qdgbmzbrhtfzenyav5l4paf5e3eynmpqma"
 	}
 	display_name = "instance-20221113-0255"
 	instance_options {
