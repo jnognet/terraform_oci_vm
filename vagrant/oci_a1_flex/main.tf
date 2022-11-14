@@ -73,4 +73,5 @@ resource "oci_core_instance" "generated_oci_core_instance" {
 		source_id = "ocid1.image.oc1.sa-saopaulo-1.aaaaaaaaogysf6h6pk6doxod4auquxipelugz5yssrvtwi2jarjc3kxz5xvq"
 		source_type = "image"
 	}
+
 }
