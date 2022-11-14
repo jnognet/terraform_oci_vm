@@ -16,7 +16,6 @@ echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] \
     sudo tee /etc/apt/sources.list.d/hashicorp.list
 sudo apt update
 sudo apt-get install terraform
-terraform -install-autocomplete
 terraform --version
 
 sudo -u vagrant curl -o /home/vagrant/install.sh https://raw.githubusercontent.com/oracle/oci-cli/master/scripts/install/install.sh
