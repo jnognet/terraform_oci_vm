@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/bash
 
 find  /home/vagrant/scripts/ -type f -name "*.sh"  | xargs chmod +x
 
