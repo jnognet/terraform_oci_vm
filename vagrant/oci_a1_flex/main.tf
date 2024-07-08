@@ -62,7 +62,7 @@ resource "oci_core_instance" "generated_oci_core_instance" {
 	}
 	is_pv_encryption_in_transit_enabled = "true"
 	metadata = {
-		"ssh_authorized_keys" = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCpPu5/g8lYQBIWRTX9vrDsZHjVztj4g0LTi5f5+K+ZKjMR7tyZEyAqQWiitTVmeDVm4eLZJX2kl+Qv94ePXoQ8sE1MKeBRMbmSpp5p1vDjbvta6NMZXxrOAGboNhLhvM7NZjssja5bdbFCKGkCnFccitHRPKgIY4+gu9m1EZTTDKr5uLeXA/OnndPFO+f2CRskomQJmvcFTr9Y2xQTGYtebwJoZsKxsJqbCy3QVqRHkYqZgbL7nGMsgLLqOxSuYh3JUP9cNtKF61WGG5NrPJFIBCqLuEwfpubAfMrcsVNtyUa0NWK3oFgS62YkMU+Tc5qMBoTXTSjMnvm8bM6AC8BvHUPEyHoMVctgrtFXBz/Z2IBrraqCtSntJ/gdd5UH6s3ecANJluAkM/7QCb6kybyd5GVzWPklCATBDxWrvHXFbs/LUjPDEOUrgWLrwGezDLS95Lxuig4JVUFsD9iAdnnuzg/8u4UgjWOgxBeudqM2SZmirn6EU+B7Am32ppsa1Gk= nt@n"
+		"ssh_authorized_keys" = "ssh-rsa XXX nt@n"
 	}
 	shape = "VM.Standard.A1.Flex"
 	shape_config {
